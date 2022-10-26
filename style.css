@@ -9,23 +9,25 @@ body {
     margin: 0;
     justify-content: space-between;
 }
-header, .hero{
+header, .hero, footer{
     display: flex;
     align-items: center;
     background-color: #1f2937;
     padding: 0 200px;
     flex-wrap: wrap;
 }
+header, footer {
+    height: 75px;
+    flex: none;
+}
 header {
     justify-content: space-between;
-    height: 50px;
-    flex: none;
 }
 .hero {
     justify-content: center;
     align-items: center;
     gap: 8px;
-    min-height: 350px;
+    min-height: 325px;
 }
 .info {
     display: flex;
@@ -43,6 +45,17 @@ header {
     justify-content: center;
     min-height: 450px;
     padding: 0 300px;
+}
+.sign-up {
+    display: flex;
+    padding: 0 200px;
+    min-height: 350px;
+    justify-content: center;
+}
+footer {
+    color: #e5e7eb;
+    font-size: 18px;
+    justify-content: center;
 }
 .logo {
     font-size: 24px;
@@ -133,4 +146,30 @@ h2 {
     color: #1f2937;
     margin: 2px;
     align-self: flex-end;
+}
+.action-box {
+    flex: 0 1 875px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3882f6;
+    margin: 100px 0px;
+    padding: 0px 100px;
+    height: 150px;
+    border-radius: 8px;
+}
+.action-left p {
+    margin: 0px;
+}
+.action-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #f9faf8;
+}
+.action-text {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+.action {
+    border: 2px solid #f9faf8;
 }
